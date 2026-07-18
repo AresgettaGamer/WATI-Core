@@ -1,0 +1,15 @@
+{
+  "name": "wati-core-bedrock-addon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:catalog": "node tools/build_from_catalog.mjs .",
+    "import:translations": "node tools/import_translations.mjs ../wati_languages_20260718/WATI . && npm run build:catalog",
+    "check": "tsc -p tsconfig.check.json && node tools/validate.mjs . && node tools/protocol_smoke_test.mjs ."
+  },
+  "devDependencies": {
+    "@minecraft/server": "2.8.0",
+    "typescript": "5.8.3"
+  }
+}

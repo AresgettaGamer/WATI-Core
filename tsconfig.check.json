@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "target": "ES2021",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@minecraft/server": [
+        "../Netbound/node_modules/@minecraft/server/index.d.ts"
+      ]
+    },
+    "skipLibCheck": true,
+    "strict": false
+  },
+  "include": [
+    "BP/scripts/**/*.js",
+    "SDK/**/*.js"
+  ]
+}
