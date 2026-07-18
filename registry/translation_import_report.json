@@ -1,0 +1,292 @@
+{
+  "generatedAt": "2026-07-18T09:10:42.125Z",
+  "policy": {
+    "display": "Source localization first; WATI names are fallback values.",
+    "sourceOnlyFolders": [
+      "Better On Bedrock",
+      "SplitBlocks"
+    ]
+  },
+  "folders": {
+    "Better On Bedrock": {
+      "namespaces": [
+        "better_on_bedrock",
+        "pog"
+      ],
+      "mode": "source-only",
+      "catalogEntries": 652,
+      "directMatches": 0,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 0,
+      "unmatched": 652,
+      "duplicateKeys": []
+    },
+    "Beyond The Underground": {
+      "namespaces": [
+        "honkit26113"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 271,
+      "directMatches": 259,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 259,
+      "unmatched": 12,
+      "duplicateKeys": []
+    },
+    "Brewin' and Chewin' Bedrock": {
+      "namespaces": [
+        "brewinandchewin"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 72,
+      "directMatches": 2,
+      "aliasMatches": 0,
+      "englishMatches": 1,
+      "imported": 0,
+      "unchanged": 3,
+      "unmatched": 69,
+      "duplicateKeys": []
+    },
+    "Connected Glass": {
+      "namespaces": [
+        "glass",
+        "glass_pane"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 35,
+      "directMatches": 35,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 35,
+      "unmatched": 0,
+      "duplicateKeys": []
+    },
+    "Crabber's Delight Bedrock": {
+      "namespaces": [
+        "crabbersdelight"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 67,
+      "directMatches": 10,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 10,
+      "unmatched": 57,
+      "duplicateKeys": []
+    },
+    "End's Delight Bedrock": {
+      "namespaces": [
+        "ends_delight"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 62,
+      "directMatches": 62,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 62,
+      "unmatched": 0,
+      "duplicateKeys": []
+    },
+    "Farmer's Delight Bedrock": {
+      "namespaces": [
+        "farmersdelight"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 166,
+      "directMatches": 141,
+      "aliasMatches": 0,
+      "englishMatches": 12,
+      "imported": 0,
+      "unchanged": 153,
+      "unmatched": 13,
+      "duplicateKeys": []
+    },
+    "Large Meals Bedrock": {
+      "namespaces": [
+        "largemeals"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 34,
+      "directMatches": 1,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 1,
+      "unmatched": 33,
+      "duplicateKeys": []
+    },
+    "Medieval Furniture": {
+      "namespaces": [
+        "medieval",
+        "endx"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 1937,
+      "directMatches": 1678,
+      "aliasMatches": 38,
+      "englishMatches": 23,
+      "imported": 38,
+      "unchanged": 1701,
+      "unmatched": 198,
+      "duplicateKeys": [
+        "tile.medieval:bamboo_beam.name",
+        "tile.medieval:stripped_bamboo_beam.name"
+      ]
+    },
+    "Modern Doors": {
+      "namespaces": [
+        "md"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 513,
+      "directMatches": 175,
+      "aliasMatches": 338,
+      "englishMatches": 0,
+      "imported": 338,
+      "unchanged": 175,
+      "unmatched": 0,
+      "duplicateKeys": []
+    },
+    "Nether's Delight Bedrock": {
+      "namespaces": [
+        "nethersdelight"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 35,
+      "directMatches": 34,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 34,
+      "unmatched": 1,
+      "duplicateKeys": []
+    },
+    "Paraglider": {
+      "namespaces": [
+        "pg"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 5,
+      "directMatches": 1,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 1,
+      "unmatched": 4,
+      "duplicateKeys": []
+    },
+    "Pet Furniture": {
+      "namespaces": [
+        "pf"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 238,
+      "directMatches": 237,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 237,
+      "unmatched": 1,
+      "duplicateKeys": [
+        "tile.pf:casaperro8.name",
+        "tile.pf:modulo11.name"
+      ]
+    },
+    "Security Craft Bedrock": {
+      "namespaces": [
+        "scb"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 25,
+      "directMatches": 18,
+      "aliasMatches": 0,
+      "englishMatches": 4,
+      "imported": 0,
+      "unchanged": 22,
+      "unmatched": 3,
+      "duplicateKeys": []
+    },
+    "Shark Biology 2": {
+      "namespaces": [
+        "shark"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 21,
+      "directMatches": 21,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 21,
+      "unmatched": 0,
+      "duplicateKeys": []
+    },
+    "Spanish Delight Bedrock": {
+      "namespaces": [
+        "sunflowerdelight"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 32,
+      "directMatches": 18,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 18,
+      "unmatched": 14,
+      "duplicateKeys": []
+    },
+    "SplitBlocks": {
+      "namespaces": [
+        "wypnt_spltblcks"
+      ],
+      "mode": "source-only",
+      "catalogEntries": 1765,
+      "directMatches": 0,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 0,
+      "unmatched": 1765,
+      "duplicateKeys": []
+    },
+    "Sunflower Delight Bedrock": {
+      "namespaces": [
+        "spanishdelight"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 25,
+      "directMatches": 1,
+      "aliasMatches": 0,
+      "englishMatches": 0,
+      "imported": 0,
+      "unchanged": 1,
+      "unmatched": 24,
+      "duplicateKeys": []
+    },
+    "True Backpacks": {
+      "namespaces": [
+        "true"
+      ],
+      "mode": "catalog-fallback",
+      "catalogEntries": 59,
+      "directMatches": 58,
+      "aliasMatches": 0,
+      "englishMatches": 1,
+      "imported": 0,
+      "unchanged": 59,
+      "unmatched": 0,
+      "duplicateKeys": [
+        "true.backpack.name.line"
+      ]
+    }
+  },
+  "manualOverrides": [
+    "minecraft:wandering_trader"
+  ]
+}
