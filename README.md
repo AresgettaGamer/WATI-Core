@@ -13,8 +13,7 @@ sus datos sin intentar acceder a ese contenido.
 
 1. Importa `WATI_Core_v1.0.0.mcaddon`.
 2. Activa **WATI Core BP** y **WATI Core RP** en el mundo.
-3. Activa Netbound! v0.5.0 o instala el overlay privado de WAWLA si deseas que
-   lo usen.
+3. Activa un addon compatible.
 
 En la lista de packs del mundo se recomienda este orden, de arriba hacia abajo:
 
