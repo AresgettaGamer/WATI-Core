@@ -8,7 +8,7 @@
   },
   "header": {
     "name": "WATI Core BP",
-    "description": "Registro universal de identificadores y nombres para addons compatibles.",
+    "description": "Registro universal de identifiers, fuentes, recetas y métodos de obtención para add-ons compatibles.",
     "min_engine_version": [
       1,
       21,
@@ -16,7 +16,7 @@
     ],
     "uuid": "fd4723b8-a9f9-4433-86f3-1ce65c33a9d1",
     "version": [
-      1,
+      2,
       0,
       0
     ]
@@ -26,7 +26,7 @@
       "type": "data",
       "uuid": "62243185-170d-4d87-aa00-5fd90e641d3c",
       "version": [
-        1,
+        2,
         0,
         0
       ]
@@ -37,7 +37,7 @@
       "entry": "scripts/main.js",
       "uuid": "d42edeed-89eb-4758-9882-515fe0c13f9b",
       "version": [
-        1,
+        2,
         0,
         0
       ]
@@ -47,7 +47,7 @@
     {
       "uuid": "11cd4186-d52b-47df-8894-fadfae8e1cd2",
       "version": [
-        1,
+        2,
         0,
         0
       ]
