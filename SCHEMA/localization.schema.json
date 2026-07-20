@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wati.example/schema/v1/localization.schema.json",
+  "title": "WATI Catalog Localization v1",
+  "type": "object",
+  "required": ["schemaVersion", "sourceId", "locales"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "sourceId": {"type": "string"},
+    "locales": {
+      "type": "object",
+      "additionalProperties": {"type": "object", "additionalProperties": {"type": "string"}}
+    }
+  },
+  "additionalProperties": true
+}
