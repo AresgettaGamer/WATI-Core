@@ -42,3 +42,13 @@ Keep WATI Core above consumers such as WATI Codex and Netbound! in the active pa
 ## Important scope note
 
 WATI Core stores identifiers and normalized interoperability metadata. It does not redistribute third-party packs, source code, scripts, textures, models, UI files, audio, original recipe files, or original directory structures. See `CATALOG_POLICY.md` for the complete policy.
+
+## Official links
+
+- [WATI Core on CurseForge](https://www.curseforge.com/minecraft-bedrock/addons/wati-core)
+- [WATI Codex on GitHub](https://github.com/AresgettaGamer/WATI-Codex)
+- [Netbound! on CurseForge](https://www.curseforge.com/minecraft-bedrock/addons/netbound)
+- [WATI Catalog Builder](https://aresgettagamer.github.io/WATI-Catalog-Builder/)
+- [Community Discord](https://discord.gg/U8WUnGCA97)
+
+Bug reports, suggestions, support questions and catalog contributions are accepted through GitHub Issues and the community Discord.
