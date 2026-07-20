@@ -47,9 +47,3 @@ The WATI name, logo, pack icons and promotional artwork are Copyright
 (c) 2026 AresgettaYT, All Rights Reserved. They may be redistributed unchanged
 as part of an official WATI Core release. Reuse as another project's identity
 requires permission.
-
-## Better On Bedrock overlay
-
-`WAWLA_Overlay/` is a private compatibility patch and is not covered by the
-licenses above. Better On Bedrock and WAWLA remain the property of their
-respective author(s). The overlay is excluded from the public source package.
