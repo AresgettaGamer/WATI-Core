@@ -1,0 +1,77 @@
+{
+  "compiler": "WATI Core Catalog Compiler",
+  "compilerVersion": "1.0.0",
+  "coreVersion": "3.0.0",
+  "dryRun": false,
+  "contributionCount": 0,
+  "sources": [],
+  "counts": {
+    "sources": 23,
+    "content": {
+      "block": 5153,
+      "entity": 210,
+      "item": 891,
+      "biome": 0,
+      "structure": 0,
+      "ecosystem": 0
+    },
+    "recipes": 5981,
+    "stations": 53,
+    "acquisitionEntries": 356
+  },
+  "localizationChanges": {
+    "es_MX": {
+      "added": 4,
+      "updated": 0,
+      "total": 4189
+    },
+    "en_US": {
+      "added": 4,
+      "updated": 0,
+      "total": 4189
+    }
+  },
+  "runtimeVanillaCatalog": {
+    "enabled": true,
+    "source": "minecraft",
+    "generatedAtRuntime": true,
+    "copiesVanillaTextures": false,
+    "textureReferenceVersion": "Mojang bedrock-samples v1.26.30.5"
+  },
+  "worldContent": {
+    "schema": 1,
+    "ecosystems": 13,
+    "structures": 107,
+    "sources": {
+      "better_on_bedrock": 45,
+      "beyond_the_underground": 1,
+      "abandoned_ruins": 61
+    },
+    "copiesExternalTextures": false,
+    "automaticStructureLocation": false
+  },
+  "vanillaSpanishSearchAliases": true,
+  "consolidation": {
+    "serverFreezeCandidate": false,
+    "stableScriptApiOnly": true,
+    "automaticBiomeSearch": "future_capability",
+    "automaticBiomeSearchIsError": false,
+    "simplifiedCodexNavigation": true,
+    "release": "stable"
+  },
+  "knowledge": {
+    "schema": 1,
+    "runtimeGenerated": true,
+    "curatedProfiles": 21,
+    "vanillaEntityDropProfiles": 31,
+    "vanillaEntityHabitatProfiles": 27,
+    "vanillaBiomeProfiles": 25,
+    "builderKnowledgeJsonCompatible": true,
+    "completeForAllAddons": false
+  },
+  "runtimeProviders": {
+    "protocol": 1,
+    "authoritativeForProviderNamespaces": true,
+    "alexsMobsStaticCatalog": false
+  }
+}

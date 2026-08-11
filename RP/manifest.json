@@ -7,8 +7,8 @@
     "product_type": "addon"
   },
   "header": {
-    "name": "WATI Core RP",
-    "description": "Nombres localizados para WATI Core y sus consumidores compatibles.",
+    "name": "WATI Core RP — v3.0.0",
+    "description": "Traducciones y recursos de WATI Core v3.0.0.",
     "min_engine_version": [
       1,
       21,
@@ -16,7 +16,7 @@
     ],
     "uuid": "11cd4186-d52b-47df-8894-fadfae8e1cd2",
     "version": [
-      2,
+      3,
       0,
       0
     ]
@@ -26,7 +26,7 @@
       "type": "resources",
       "uuid": "b77c0503-17bd-46c8-b85a-1906285d9838",
       "version": [
-        2,
+        3,
         0,
         0
       ]
@@ -34,15 +34,5 @@
   ],
   "capabilities": [
     "pbr"
-  ],
-  "dependencies": [
-    {
-      "uuid": "fd4723b8-a9f9-4433-86f3-1ce65c33a9d1",
-      "version": [
-        2,
-        0,
-        0
-      ]
-    }
   ]
 }
