@@ -1,5 +1,22 @@
 # WATI Core — Historial de cambios
 
+# WATI Core v3.2.0 - Release
+
+- Corrige el registro `entityEnchantments` de Better on Bedrock: añade entidades vanilla omitidas como `minecraft:zombie`, `minecraft:drowned`, `minecraft:husk`, `minecraft:pillager`, `minecraft:evocation_illager` y `minecraft:rabbit`.
+- Actualiza las 23 fuentes estáticas contra versiones actuales.
+- Añade 408 facts exactos extraídos de definiciones reales de addons: 48 equipos/armaduras, 49 herramientas/armas y 311 alimentos.
+- Codifica protección, ranura, durabilidad, daño, velocidad, tier, nutrición, saturación y contenedores devueltos cuando el addon los declara.
+- Mantiene Schema 3, Knowledge Schema 2, Lookup v1, Provider v1 y Codex Protocol 3 compatibles.
+
+## WATI Core v3.1.0 — Knowledge Bridge interno
+
+- Añade WATI Knowledge Schema 2 sin romper Schema 3 ni Codex Protocol 3.
+- Añade `facts` estáticos reutilizables por WATI Lens (Knowledge Bridge).
+- Primeros facts: slot/material/protección conocida de armaduras y tipo/tier inferido de herramientas.
+- Añade capabilities `knowledgeStaticFacts` y `lensKnowledgeBridge`.
+- Migra fuera de Core los aliases de presentación de Alex's Mobs y Colourful Portals; pasan al futuro WATI Lens Provider de cada addon.
+- Mantiene `wati:lookup`, Provider v1 y protocolos Codex 2/3 compatibles.
+
 ## Release v3.0.0 — Primera versión estable de Schema 3
 
 - Promueve WATI Core a la línea estable v3 con Schema 3, Knowledge Schema 1 y Runtime Provider Protocol v1.
