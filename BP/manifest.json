@@ -7,8 +7,8 @@
     "product_type": "addon"
   },
   "header": {
-    "name": "WATI Core BP — v3.0.0",
-    "description": "Registro WATI Schema 3 con proveedores runtime, búsqueda es_MX y conocimiento enriquecido.",
+    "name": "WATI Core BP — v3.2.0",
+    "description": "WATI Schema 3.2 con Knowledge Schema 2, facts auditados y WATI Lens Knowledge Bridge.",
     "min_engine_version": [
       1,
       21,
@@ -17,7 +17,7 @@
     "uuid": "fd4723b8-a9f9-4433-86f3-1ce65c33a9d1",
     "version": [
       3,
-      0,
+      2,
       0
     ]
   },
@@ -27,7 +27,7 @@
       "uuid": "62243185-170d-4d87-aa00-5fd90e641d3c",
       "version": [
         3,
-        0,
+        2,
         0
       ]
     },
@@ -38,7 +38,7 @@
       "uuid": "d42edeed-89eb-4758-9882-515fe0c13f9b",
       "version": [
         3,
-        0,
+        2,
         0
       ]
     }
@@ -48,7 +48,7 @@
       "uuid": "11cd4186-d52b-47df-8894-fadfae8e1cd2",
       "version": [
         3,
-        0,
+        2,
         0
       ]
     },

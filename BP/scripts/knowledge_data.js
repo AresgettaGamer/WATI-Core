@@ -1,4 +1,4 @@
-// WATI Knowledge Schema 1 — curated facts and future Builder-compatible data.
+// WATI Knowledge Schema 2 — curated facts and future Builder-compatible data.
 // Facts are deliberately structured so consumers can reveal them progressively.
 
 const rel = (kind, id, relation = "related", confidence = 3) => Object.freeze({ kind, id, relation, confidence });
@@ -11,7 +11,7 @@ const habitat = (biome, dimension = "minecraft:overworld", relation = "spawns", 
   biome, dimension, relation, confidence
 });
 
-export const KNOWLEDGE_SCHEMA_VERSION = 1;
+export const KNOWLEDGE_SCHEMA_VERSION = 2;
 
 export const CURATED_KNOWLEDGE = Object.freeze({
   "minecraft:chest": Object.freeze({

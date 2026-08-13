@@ -1,6 +1,6 @@
 # WATI Runtime Provider Protocol v1
 
-WATI Core v3.0.0 permite que un Behavior Pack instalado registre su
+WATI Core v3.0.0+ permite que un Behavior Pack instalado registre su
 propia fuente y sus entradas sin recompilar el catálogo de Core.
 
 ## Alcance de v1

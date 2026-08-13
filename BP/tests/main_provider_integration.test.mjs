@@ -87,9 +87,16 @@ const search = latest("wati:search_result", "search1");
 assert.equal(search.total, 1);
 assert.equal(search.items[0].i, "personalized_sounds:test_record");
 
+emit("wati:knowledge", { v: 3, c: "integration_test", r: "knowledge_armor", k: "item", i: "minecraft:diamond_chestplate" });
+const armorKnowledge = latest("wati:knowledge_result", "knowledge_armor");
+assert.equal(armorKnowledge.schema, 2);
+assert.equal(armorKnowledge.factsSchema, 1);
+assert.equal(armorKnowledge.facts.equipment.slot, "chest");
+assert.equal(armorKnowledge.facts.equipment.armorPoints, 8);
+
 
 // Alex's Mobs is no longer a static WATI source. Its Runtime Provider can own
-// alexs_mobs, while implementation-only IDs receive presentation aliases only.
+// alexs_mobs. Presentation-only aliases moved to the add-on's Lens Provider in Core v3.1.0.
 const alexSource = {
   name: "Alex's Mobs — Bedrock Rebuild",
   version: "1.0.0",
@@ -110,16 +117,16 @@ assert.equal(alexCommit.ok, true);
 emit("wati:lookup", { v: 1, c: "integration_test", r: "hidden_anaconda", k: "entity", i: "alexs_mobs:anaconda_part" });
 const hiddenAnaconda = latest("wati:result", "hidden_anaconda");
 assert.equal(hiddenAnaconda.f, false);
-assert.equal(hiddenAnaconda.n, "wati.redirect.entity.alexs_mobs.anaconda_part");
-assert.equal(hiddenAnaconda.d, "Anaconda");
+assert.equal(hiddenAnaconda.n, undefined);
+assert.equal(hiddenAnaconda.d, "Anaconda Part");
 assert.equal(hiddenAnaconda.sid, "alexs_mobs_bedrock");
 assert.equal(hiddenAnaconda.a, "Alex's Mobs — Bedrock Rebuild");
 
 emit("wati:lookup", { v: 1, c: "integration_test", r: "hidden_egg", k: "block", i: "alexs_mobs:terrapin_egg_block_4" });
 const hiddenEgg = latest("wati:result", "hidden_egg");
 assert.equal(hiddenEgg.f, false);
-assert.equal(hiddenEgg.n, "wati.redirect.block.alexs_mobs.terrapin_egg_block");
-assert.equal(hiddenEgg.d, "Terrapin Eggs");
+assert.equal(hiddenEgg.n, undefined);
+assert.equal(hiddenEgg.d, "Terrapin Egg Block 4");
 
 emit("wati:search", { v: 3, c: "integration_test", r: "hidden_search", q: "anaconda part", p: 0, z: 12 });
 const hiddenSearch = latest("wati:search_result", "hidden_search");

@@ -1,7 +1,7 @@
 // WATI 3 stable contract. Introduced during the v2.2.0 development line.
 // This file describes the public protocol and the schemas accepted by Core.
 
-export const CORE_PACK_VERSION = "3.0.0";
+export const CORE_PACK_VERSION = "3.2.0";
 export const CORE_BP_UUID = "fd4723b8-a9f9-4433-86f3-1ce65c33a9d1";
 export const LOOKUP_PROTOCOL_VERSION = 1;
 export const CODEX_PROTOCOL_VERSION = 3;
@@ -24,8 +24,8 @@ export const WATI_SCHEMA = Object.freeze({
     accepted: Object.freeze([1, 2])
   }),
   knowledge: Object.freeze({
-    current: 1,
-    accepted: Object.freeze([1])
+    current: 2,
+    accepted: Object.freeze([1, 2])
   }),
   protocol: Object.freeze({
     lookup: LOOKUP_PROTOCOL_VERSION,

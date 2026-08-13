@@ -128,7 +128,7 @@ La especificación completa y el SDK copiable están en
 ## Búsqueda Vanilla es_MX (desde Core v2.6.0)
 
 Core genera alias de búsqueda españoles a partir de identifiers y claves de localización Vanilla. Los alias son únicamente un índice: la ficha continúa usando la clave oficial de Minecraft para renderizar el nombre en el idioma del cliente. El buscador elimina palabras de enlace frecuentes, por lo que consultas como `cofre de cobre`, `gólem de hierro` o `ladrillos de piedra` no dependen del orden de las palabras.
-## Knowledge Schema 1
+## Knowledge Schema 2 (compatible con Schema 1)
 
 Core puede entregar un perfil de conocimiento mediante `wati:knowledge` / `wati:knowledge_result`. El perfil no reemplaza las recetas ni `acquisition.json`; los relaciona para que un consumidor construya una ficha narrativa sin perder evidencia estructurada.
 
@@ -147,3 +147,23 @@ La primera implementación genera perfiles a partir del catálogo y de `ACQUISIT
 
 En el modo Aventura, Codex es responsable de decidir qué campos se revelan según el progreso del jugador.
 
+
+
+### WATI Lens Knowledge Bridge (Core v3.2.0)
+
+`wati:knowledge` mantiene Codex Protocol 3 y añade de forma aditiva `factsSchema` y `facts`.
+Los consumers antiguos pueden ignorar estos campos. Lens v1.0.0 los usa como conocimiento estático/fallback.
+
+Ejemplo:
+```json
+{
+  "schema": 2,
+  "factsSchema": 1,
+  "facts": {
+    "equipment": { "slot": "chest", "material": "diamond", "armorPoints": 8 },
+    "sources": { "equipment": "wati_core_curated" }
+  }
+}
+```
+
+Facts inferidos por identificador se marcan con confianza menor; los valores exactos deben venir de curación o del Catalog Builder/fuente del addon.

@@ -1,3 +1,4 @@
+import { buildStaticFacts, LENS_FACTS_SCHEMA_VERSION } from "./lens_knowledge_data.js";
 import { ACQUISITION_DATA } from "./acquisition_data.js";
 import { WORLD_CONTENT } from "./world_content_data.js";
 import {
@@ -224,8 +225,10 @@ export function buildKnowledgeProfile(kind, typeId, options = {}) {
       : Array.isArray(curated.contents) ? curated.contents : [];
   const relations = mergeByKey(curated.relations, relatedSameIdentifier(typeId, options.relatedKinds), value => `${value.kind}:${value.id}:${value.relation}`).slice(0, 24);
   const summaryCode = genericSummaryCode(kind, roles, acquisition.length, drops.length, contents.length);
+  const facts = buildStaticFacts(kind, typeId, options.entry);
   return Object.freeze({
     schema: KNOWLEDGE_SCHEMA_VERSION,
+    factsSchema: LENS_FACTS_SCHEMA_VERSION,
     kind,
     id: typeId,
     summaryKey: curated.summaryKey,
@@ -237,6 +240,7 @@ export function buildKnowledgeProfile(kind, typeId, options = {}) {
     contents,
     relations,
     construction: curated.construction,
+    facts,
     confidence: curated.summaryKey ? 3 : (acquisition.length || drops.length || contents.length ? 2 : 1),
     generated: !curated.summaryKey
   });
@@ -253,6 +257,7 @@ export function knowledgeStats() {
     acquisitionTargets: Object.keys(ACQUISITION_DATA).length,
     indexedDropEntities: indexes.byEntity.size,
     indexedDropBlocks: indexes.byBlock.size,
-    indexedBiomeTokens: indexes.byBiomeToken.size
+    indexedBiomeTokens: indexes.byBiomeToken.size,
+    factsSchema: LENS_FACTS_SCHEMA_VERSION
   });
 }

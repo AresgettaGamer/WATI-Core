@@ -7,8 +7,8 @@
     "product_type": "addon"
   },
   "header": {
-    "name": "WATI Core RP — v3.0.0",
-    "description": "Traducciones y recursos de WATI Core v3.0.0.",
+    "name": "WATI Core RP — v3.2.0",
+    "description": "Traducciones y recursos de WATI Core v3.2.0.",
     "min_engine_version": [
       1,
       21,
@@ -17,7 +17,7 @@
     "uuid": "11cd4186-d52b-47df-8894-fadfae8e1cd2",
     "version": [
       3,
-      0,
+      2,
       0
     ]
   },
@@ -27,7 +27,7 @@
       "uuid": "b77c0503-17bd-46c8-b85a-1906285d9838",
       "version": [
         3,
-        0,
+        2,
         0
       ]
     }

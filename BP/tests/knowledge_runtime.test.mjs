@@ -4,7 +4,7 @@ import { buildKnowledgeProfile, knowledgeStats } from "../scripts/knowledge_runt
 const resolveKind = typeId => typeId.includes("wild_onions") ? "block" : "item";
 
 const zombie = buildKnowledgeProfile("entity", "minecraft:zombie", { entry: {}, relatedKinds: [], resolveKind });
-assert.equal(zombie.schema, 1);
+assert.equal(zombie.schema, 2);
 assert.ok(zombie.drops.some(row => row.id === "minecraft:rotten_flesh"));
 assert.ok(zombie.drops.some(row => row.id === "minecraft:iron_ingot" && row.rarity === "rare"));
 assert.ok(!zombie.drops.some(row => row.id === "minecraft:copper_ingot"));
@@ -29,9 +29,25 @@ const generic = buildKnowledgeProfile("item", "example:magic_axe", { entry: { ca
 assert.ok(generic.roles.includes("tool"));
 assert.equal(generic.generated, true);
 
+
+const diamondChest = buildKnowledgeProfile("item", "minecraft:diamond_chestplate", { entry: { cat: "Equipment", grp: "Armor" }, relatedKinds: [], resolveKind });
+assert.equal(diamondChest.factsSchema, 1);
+assert.equal(diamondChest.facts.equipment.slot, "chest");
+assert.equal(diamondChest.facts.equipment.armorPoints, 8);
+assert.equal(diamondChest.facts.equipment.material, "diamond");
+
+const inferredPickaxe = buildKnowledgeProfile("item", "example:mythril_pickaxe", { entry: { cat: "Equipment", grp: "Tools" }, relatedKinds: [], resolveKind });
+assert.equal(inferredPickaxe.facts.tool.kind, "pickaxe");
+
+const copperHelmet = buildKnowledgeProfile("item", "minecraft:copper_helmet", { entry: { cat: "Equipment", grp: "Armor" }, relatedKinds: [], resolveKind });
+assert.equal(copperHelmet.facts.equipment.slot, "head");
+assert.equal(copperHelmet.facts.equipment.material, "copper");
+assert.equal(copperHelmet.facts.equipment.armorPoints, undefined);
+
 const stats = knowledgeStats();
-assert.equal(stats.schema, 1);
+assert.equal(stats.schema, 2);
+assert.equal(stats.factsSchema, 1);
 assert.ok(stats.curatedProfiles >= 20);
 assert.ok(stats.indexedDropEntities > 0);
 
-console.log("WATI Knowledge Schema 1 runtime: tests passed");
+console.log("WATI Knowledge Schema 2 runtime: tests passed");
